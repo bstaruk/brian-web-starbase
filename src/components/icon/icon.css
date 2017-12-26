@@ -1,0 +1,36 @@
+:root {
+  --icon-height-full: 2.5rem;
+}
+
+.icon {
+  display: block;
+  height: var(--icon-height-full);
+  fill: var(--body-font-color);
+  transition: fill 300ms ease;
+
+  &__anchor:hover & {
+    fill: yellow;
+  }
+
+  &__list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    & > li {
+      float: left;
+      margin-right: 2rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
