@@ -6,7 +6,7 @@
 .icon {
   display: block;
   height: var(--icon-height-small);
-  fill: var(--body-font-color);
+  fill: var(--anchor-font-color);
   transition: fill 300ms ease;
 
   @media (--medium) {
@@ -14,7 +14,12 @@
   }
 
   &__anchor:hover & {
-    fill: yellow;
+    fill: var(--anchor-hover-font-color);
+  }
+
+  &__anchor:active &,
+  &__anchor:focus & {
+    fill: var(--anchor-active-font-color);
   }
 
   &__list {
