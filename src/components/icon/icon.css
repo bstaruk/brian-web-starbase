@@ -1,12 +1,17 @@
 :root {
+  --icon-height-small: 2rem;
   --icon-height-full: 2.5rem;
 }
 
 .icon {
   display: block;
-  height: var(--icon-height-full);
+  height: var(--icon-height-small);
   fill: var(--body-font-color);
   transition: fill 300ms ease;
+
+  @media (--medium) {
+    height: var(--icon-height-full);
+  }
 
   &__anchor:hover & {
     fill: yellow;
@@ -26,7 +31,11 @@
 
     & > li {
       float: left;
-      margin-right: 2rem;
+      margin-right: 1rem;
+
+      @media (--medium) {
+        margin-right: 2rem;
+      }
 
       &:last-of-type {
         margin-right: 0;
