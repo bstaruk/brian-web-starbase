@@ -1,5 +1,5 @@
 :root {
-  --icon-height-small: 2rem;
+  --icon-height-small: 2.25rem;
   --icon-height-full: 2.5rem;
 }
 
@@ -36,7 +36,7 @@
 
     & > li {
       float: left;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
 
       @media (--medium) {
         margin-right: 2rem;
