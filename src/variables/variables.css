@@ -2,10 +2,10 @@
 
 :root {
   /* colors */
-  --body-bg-color: #252527;
-  --body-font-color: #f0f0f0;
-  --anchor-font-color: #9bd6f0;
-  --anchor-hover-font-color: #959ff0;
+  --body-bg-color: #171719;
+  --body-font-color: #efefef;
+  --anchor-font-color: #abd1f0;
+  --anchor-hover-font-color: #fc0;
   --anchor-active-font-color: #daabf0;
 
   /* typography */
