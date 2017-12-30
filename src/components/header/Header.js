@@ -11,7 +11,13 @@ class Header {
   init() {
     const header = this.el.querySelector('h1') || null;
     if (header) {
-      header.textContent = 'brian@staruk.me';
+      setTimeout(() => {
+        header.classList.add('header--active');
+        setTimeout(() => {
+          header.textContent = 'brian@staruk.me';
+          header.classList.remove('header--active');
+        }, 300);
+      }, 2000);
     }
   }
 }

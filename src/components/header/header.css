@@ -4,4 +4,12 @@
   @media (--medium) {
     margin-bottom: 1rem;
   }
+
+  &--active {
+    color: var(--body-bg-color);
+  }
+
+  & > h1 {
+    transition: color 200ms ease;
+  }
 }
