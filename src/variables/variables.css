@@ -4,9 +4,9 @@
   /* colors */
   --body-bg-color: #171719;
   --body-font-color: #efefef;
-  --anchor-font-color: #abd1f0;
-  --anchor-hover-font-color: #fc0;
-  --anchor-active-font-color: #daabf0;
+  --anchor-font-color: #fff;
+  --anchor-hover-font-color: #95caff;
+  --anchor-active-font-color: #fc0;
 
   /* typography */
   --font-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

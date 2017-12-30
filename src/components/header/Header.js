@@ -12,10 +12,11 @@ class Header {
     const header = this.el.querySelector('h1') || null;
     if (header) {
       setTimeout(() => {
-        header.classList.add('header--active');
+        header.classList.add('header--dark');
         setTimeout(() => {
           header.textContent = 'brian@staruk.me';
-          header.classList.remove('header--active');
+          header.classList.remove('header--dark');
+          header.classList.add('header--lit');
         }, 300);
       }, 2000);
     }

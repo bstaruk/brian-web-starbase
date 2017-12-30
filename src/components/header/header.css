@@ -5,8 +5,12 @@
     margin-bottom: 1rem;
   }
 
-  &--active {
+  &--dark {
     color: var(--body-bg-color);
+  }
+
+  &--lit {
+    color: var(--anchor-hover-font-color);
   }
 
   & > h1 {
