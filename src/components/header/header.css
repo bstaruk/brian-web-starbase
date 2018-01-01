@@ -10,7 +10,7 @@
   }
 
   &--lit {
-    color: var(--anchor-hover-font-color);
+    color: var(--anchor-active-font-color);
   }
 
   & > h1 {
