@@ -2,10 +2,11 @@
 
 :root {
   /* colors */
-  --body-bg-color: #fefefe;
-  --body-font-color: #333;
-  --anchor-font-color: #2475c1;
-  --border-color: #666;
+  --body-bg-color: #171719;
+  --body-font-color: #efefef;
+  --anchor-font-color: #95caff;
+  --anchor-hover-font-color: #d3e5f5;
+  --anchor-active-font-color: #ffe05b;
 
   /* typography */
   --font-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

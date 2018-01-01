@@ -1,0 +1,50 @@
+:root {
+  --icon-height-small: 2.25rem;
+  --icon-height-full: 2.5rem;
+}
+
+.icon {
+  display: block;
+  height: var(--icon-height-small);
+  fill: var(--anchor-font-color);
+  transition: fill 300ms ease;
+
+  @media (--medium) {
+    height: var(--icon-height-full);
+  }
+
+  &__anchor:hover & {
+    fill: var(--anchor-hover-font-color);
+  }
+
+  &__anchor:active &,
+  &__anchor:focus & {
+    fill: var(--anchor-active-font-color);
+  }
+
+  &__list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    & > li {
+      float: left;
+      margin-right: 1.5rem;
+
+      @media (--medium) {
+        margin-right: 2rem;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
