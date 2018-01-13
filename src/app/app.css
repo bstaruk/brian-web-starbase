@@ -10,7 +10,8 @@
 body {
   background-color: var(--body-bg-color);
   font-family: var(--font-sans);
-  font-size-responsive: 0.9rem 1.1rem 30rem 40rem;
+  font-size: responsive 0.9rem 1.1rem;
+  font-range: 30rem 40rem;
   line-height: 1.4;
   color: var(--body-font-color);
   padding: 1rem;
@@ -56,9 +57,5 @@ h4 {
 }
 
 h1 {
-  font-size-responsive: 1.75rem 3.5rem 20rem 50rem;
-}
-
-h2 {
-  font-size-responsive: 1.4rem 2.25rem 20rem 50rem;
+  font-size: 2.6em;
 }
