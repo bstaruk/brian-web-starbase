@@ -5,8 +5,8 @@ import Tabs from './components/tabs/Tabs';
 document.querySelector('html').classList.remove('no-js');
 
 // fetch & promise polyfills
-require('es6-promise').polyfill();
-require('whatwg-fetch');
+// require('es6-promise').polyfill();
+// require('whatwg-fetch');
 
 // baseline app styles
 require('./app/fonts/fonts.css');
