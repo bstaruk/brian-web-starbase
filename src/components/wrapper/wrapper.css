@@ -1,8 +1,0 @@
-.wrapper {
-  max-width: 38rem;
-  margin: 0 auto;
-
-  &--intro {
-    margin-bottom: 2rem;
-  }
-}
