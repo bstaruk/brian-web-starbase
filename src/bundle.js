@@ -1,9 +1,12 @@
-// promise & fetch polyfills
+// components js
+import Tabs from './components/tabs/Tabs';
+
+// remove .no-js from html tag
+document.querySelector('html').classList.remove('no-js');
+
+// fetch & promise polyfills
 // require('es6-promise').polyfill();
 // require('whatwg-fetch');
-
-// components js
-import Header from './components/header/Header';
 
 // baseline app styles
 require('./app/fonts/fonts.css');
@@ -12,8 +15,12 @@ require('./app/app.css');
 // components styles
 require.context('./components/', true, /\.css$/);
 
-// header component
-const headers = document.getElementsByClassName('header');
-for (let i = 0; i < headers.length; i++) {
-  new Header({ el: headers[i] });
-}
+// component js
+const initializeComponents = () => {
+  const tabs = document.getElementsByClassName('tabs');
+  for (let i = 0; i < tabs.length; i++) {
+    new Tabs({ el: tabs[i] });
+  }
+};
+
+initializeComponents(); // let's get this show on the road

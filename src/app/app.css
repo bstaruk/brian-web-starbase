@@ -8,54 +8,28 @@
 }
 
 body {
+  max-width: var(--body-width-max);
   background-color: var(--body-bg-color);
   font-family: var(--font-sans);
-  font-size: responsive 0.9rem 1.1rem;
-  font-range: 30rem 40rem;
-  line-height: 1.4;
+  font-size: responsive var(--body-font-size-range);
+  font-range: var(--body-font-range);
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
   color: var(--body-font-color);
   padding: 1rem;
   margin: 0;
-  text-align: center;
-}
-
-p,
-ul,
-ol,
-blockquote,
-pre,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0 0 1rem;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 a {
   color: var(--anchor-font-color);
-  transition: color 250ms ease;
+  transition: color 200ms ease;
 
   &:hover {
     color: var(--anchor-hover-font-color);
   }
-
-  &:active,
-  &:focus {
-    color: var(--anchor-active-font-color);
-  }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-serif);
-}
-
-h1 {
-  font-size: 2.6em;
+input,
+button {
+  font-family: var(--font-sans);
 }

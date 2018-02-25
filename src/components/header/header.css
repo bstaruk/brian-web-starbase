@@ -1,19 +1,42 @@
-.header {
-  margin: 0 0 0.5rem;
+:root {
+  --header-height-small: 2rem;
+  --header-font-size-small: 1.5rem;
+  --header-height-full: 2.5rem;
+  --header-font-size-full: 2rem;
+}
 
-  @media (--medium) {
-    margin-bottom: 1rem;
+#header {
+  position: relative;
+
+  & img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: var(--header-height-small);
+    transition: height 300ms ease;
+
+    @media (--medium) {
+      height: var(--header-height-full);
+    }
   }
 
-  &--dark {
-    color: var(--body-bg-color);
-  }
+  & h1 {
+    font-family: var(--font-serif);
+    font-size: var(--header-font-size-small);
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: var(--header-height-small);
+    padding-left: calc(var(--header-height-small) + 0.5rem);
+    margin-top: 0;
+    transition:
+      font-size 300ms ease,
+      line-height 300ms ease,
+      padding-left 300ms ease;
 
-  &--lit {
-    color: var(--anchor-active-font-color);
-  }
-
-  & > h1 {
-    transition: color 200ms ease;
+    @media (--medium) {
+      font-size: var(--header-font-size-full);
+      line-height: var(--header-height-full);
+      padding-left: calc(var(--header-height-full) + 0.5rem);
+    }
   }
 }
