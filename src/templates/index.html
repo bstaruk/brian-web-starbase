@@ -4,54 +4,60 @@
   <meta charset="UTF-8">
   <title>brian staruk is a web developer from boston</title>
   <meta name="description" content="he's into everything front-end (react, es6+, postcss, node, webpack) and a little back-end (lemp) too... you should totally check him out on github!">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" type="text/css" href="assets/app.css">
-
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/manifest.json">
-  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="description" content="starbase: webpack 4 boilerplate w/ Babel (ES6), ESLint, PostCSS, cssnext, stylelint & more">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fefefe">
 </head>
 <body>
-<header role="banner" id="header">
-  <img src="images/starbase.png" alt="starbase logo" />
-  <h1>brian.staruk.me</h1>
+<!-- header -->
+<header role="banner" class="header">
+  <img src="images/starbase.png" alt="starbase logo" class="header__image" />
+  <h1 class="header__title">brian.staruk.me</h1>
   <p>i'm a web developer from boston who's into modern front-end tech -- javascript (es6+, react), css (postcss, scss), html (html5, aria) and the like. this is my corner of the net.</p>
 </header>
+
+<!-- tabs -->
 <main role="main" class="tabs">
   <nav>
     <ul role="tablist" class="tabs__list">
       <li role="presentation">
-        <a role="tab" id="tab1" aria-controls="panel1" aria-selected="true" href="#panel1" title="i'm from the south... the deep south!" class="tabs__list--active" tabindex="1">where i'm from</a>
+        <a role="tab" id="tab1" aria-controls="panel1" aria-selected="true" href="#panel1" title="a brief history of starbase-- it's got electrolytes!" class="tabs__list--active" tabindex="1">where i'm from</a>
       </li>
+
       <li role="presentation">
-        <a role="tab" id="tab2" aria-controls="panel2" aria-selected="false" href="#panel2" title="do you mambo? it's all in the hips!" tabindex="2">what i do</a>
+        <a role="tab" id="tab2" aria-controls="panel2" aria-selected="false" href="#panel2" title="an overview of the starbase commands" tabindex="2">what i do</a>
       </li>
+
       <li role="presentation">
-        <a role="tab" id="tab3" aria-controls="panel3" aria-selected="false" href="#panel3" title="release the good... release the awesome!" tabindex="3">where i am</a>
+        <a role="tab" id="tab3" aria-controls="panel3" aria-selected="false" href="#panel3" title="free software is for you and me" tabindex="3">where i am</a>
       </li>
     </ul>
   </nav>
-  <div role="tabpanel" aria-labelledby="tab1" id="panel1" class="tabs__content tabs__content--active" aria-hidden="false">
+
+  <div role="tabpanel" aria-labelledby="tab1" aria-hidden="false" id="panel1" class="tabs__content tabs__content--active">
     <p>i grew up in worcester, before attending and starting coding at <a href="https://www.cpsed.net/cactc/" title="cranston area career &amp; technical center">cranston area career &amp; technical center</a> in high school. i live and work as a front-end web developer in boston today.</p>
+
     <p>i started slicing up designs from psd to html in 2007, before finding php and becoming a full-stack developer in 2009. i focused on wordpress after it won the war against joomla in 2010 and didn't look back until i became a front-end developer in 2016. i started with gulp, bower and scss-- moved onto angular, and now i mostly work with react, es6+, postcss, nodejs and webpack.</p>
   </div>
-  <div role="tabpanel" aria-labelledby="tab2" id="panel2" class="tabs__content" aria-hidden="true">
+
+  <div role="tabpanel" aria-labelledby="tab2" aria-hidden="true" id="panel2" class="tabs__content">
     <p>i strive to create functionally elegant software with an emphasis on usability and accessibility. i love exploring the bleeding edge, but i know when to fall back on my experience.</p>
+
     <p>i'm all about es6+, postcss and webpack these days. i built and maintain my own webpack development boilerplate called <a href="https://github.com/bstaruk/starbase" title="learn more about starbase on github">starbase</a>, which comes in <a href="https://github.com/bstaruk/starbase-react" title="learn more about starbase-react on github">react</a> and <a href="https://github.com/bstaruk/starbase-wordpress" title="learn more about starbase-wordpress on github">wordpress</a> flavors too.</p>
+
     <p>when i'm not coding, i'm usually wishing i were. so i have a couple side projects as well such as <a href="https://pricebtc.com" title="check the current price of bitcoin at pricebtc.com">my bitcoin price checker</a> and <a href="https://ezpw.co" title="create a random password securely at ezpw.co">my random password generator</a>.</p>
   </div>
-  <div role="tabpanel" aria-labelledby="tab3" id="panel3" class="tabs__content" aria-hidden="true">
+
+  <div role="tabpanel" aria-labelledby="tab3" aria-hidden="true" id="panel3" class="tabs__content">
     <p>unless your name is mom, chances are i won't pick up your call. i check my email more than any person should though and my address can be found on <a href="https://resume.brian.staruk.me" title="check out my resume at resume.brian.staruk.me">my resume</a> and <a href="https://github.com/bstaruk" title="learn more about brian staruk on github">my github profile</a>. i can also be reached on <a href="https://www.linkedin.com/in/brian-staruk/" title="find me on linkedin">my linkedin profile</a> if you're into that kind of thing.</p>
+
     <p>drop me a line and i'll get back to you faster than you probably think!</p>
   </div>
 </main>
-<footer role="contentinfo" id="footer">
+
+<!-- footer -->
+<footer role="contentinfo" class="footer">
   <p>conjured with <a href="https://github.com/bstaruk/starbase" title="learn more about starbase on github">starbase</a> | <a href="https://github.com/bstaruk" title="learn more about brian staruk on github">check me out on github!</a></p>
 </footer>
-<script src="assets/app.js"></script>
 </body>
 </html>
