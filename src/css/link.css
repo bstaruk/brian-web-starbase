@@ -1,0 +1,23 @@
+@import "./_variables.css";
+
+.link {
+  color: var(--theme-cyan);
+  transition: color 200ms ease;
+
+  &:hover {
+    color: var(--theme-green);
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &--dark {
+    color: var(--theme-comment);
+  }
+}
