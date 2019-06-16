@@ -24,12 +24,3 @@ body {
     padding-top: 2rem;
   }
 }
-
-a {
-  color: var(--theme-cyan);
-  transition: color 200ms ease;
-
-  &:hover {
-    color: var(--theme-green);
-  }
-}
