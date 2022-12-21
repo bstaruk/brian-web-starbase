@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Counter from 'components/Counter';
 import Link from 'components/Link';
 import Text from 'components/Text';
 import { Wrapper, HeaderWrapper } from './wrappers';
@@ -15,21 +14,25 @@ const HomePage = () => (
     <Wrapper>
       <HeaderWrapper>
         <Text as="h1" variant="h1">
-          starbase (react)
+          brian.staruk.net
         </Text>
 
         <Text as="p">
           <>
-            <Link href="https://github.com/bstaruk/starbase-react" target="_blank">
-              starbase-react
+            I{"'"}m a web developer from Boston with a passion for creating elegant, functional user
+            experiences with modern front-end technologies including React, Webpack, ES6, PostCSS &
+            semantic HTML. To learn more about me,{' '}
+            <Link href="https://resume.brian.staruk.net" target="_blank">
+              check out my resume
             </Link>{' '}
-            is a production-ready TypeScript / React boilerplate, bootstrapped with CRA and
-            sweetened with Redux Toolkit, Redux-Saga, Emotion and more.
+            or{' '}
+            <Link href="https://www.linkedin.com/in/brian-staruk" target="_blank">
+              add me on LinkedIn
+            </Link>
+            .
           </>
         </Text>
       </HeaderWrapper>
-
-      <Counter />
     </Wrapper>
   </>
 );
