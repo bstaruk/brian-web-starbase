@@ -10,7 +10,7 @@ const globalStyles = (theme: Theme) => css`
   body {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: ${theme.colors.background};
-    color: ${theme.colors.white};
+    color: ${theme.colors.foreground};
   }
 `;
 
