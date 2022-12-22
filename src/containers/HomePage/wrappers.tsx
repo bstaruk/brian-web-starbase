@@ -25,7 +25,7 @@ export const PageWrapper = styled.div`
 `;
 
 export const SectionWrapper = styled.section`
-  max-width: 90ch;
+  max-width: 75ch;
   margin: 0 auto 24px;
   padding: 24px;
   text-align: center;

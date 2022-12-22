@@ -20,15 +20,16 @@ const HomePage = () => (
           </Text>
 
           <Text as="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat mauris sed quam
-            euismod luctus nec et ante. Nulla finibus lobortis tellus, eget laoreet turpis molestie
-            sed. Nulla enim est, dignissim a ligula eget, faucibus convallis turpis. Nullam pulvinar
-            blandit leo nec porttitor. Ut tristique lobortis iaculis. Morbi scelerisque risus nec
-            aliquam tempus. Sed placerat leo libero, id ultricies nunc laoreet ac.
+            <>
+              I{"'"}m a husband, animal lover, homebrewer and gamer from Boston, MA. More
+              relevantly, I{"'"}m a front-end web developer with a passion for user and dev
+              experience. Crafting polished, accessible interfaces with React and implementing
+              airtight CI/CD flows are my specialties.
+            </>
           </Text>
         </SectionWrapper>
 
-        <DownIconWrapper>
+        <DownIconWrapper aria-hidden="true">
           <DownIcon />
         </DownIconWrapper>
       </PageWrapper>
