@@ -34,3 +34,26 @@ export const SectionWrapper = styled.section`
     margin-bottom: 8px;
   }
 `;
+
+export const DownIconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  margin-left: -18px;
+  width: 36px;
+  height: 36px;
+  opacity: 0.25;
+
+  svg {
+    display: block;
+    width: 36px;
+    height: 36px;
+
+    path {
+      fill: ${p => p.theme.colors.foreground};
+    }
+  }
+`;

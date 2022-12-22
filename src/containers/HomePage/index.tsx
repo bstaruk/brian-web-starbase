@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet-async';
 
 import Text from 'components/Text';
 import SocialLinks from 'components/SocialLinks';
-import { Wrapper, PageWrapper, SectionWrapper } from './wrappers';
+import { ReactComponent as DownIcon } from './assets/down.svg';
+import { Wrapper, PageWrapper, SectionWrapper, DownIconWrapper } from './wrappers';
 
 const HomePage = () => (
   <>
@@ -26,6 +27,10 @@ const HomePage = () => (
             aliquam tempus. Sed placerat leo libero, id ultricies nunc laoreet ac.
           </Text>
         </SectionWrapper>
+
+        <DownIconWrapper>
+          <DownIcon />
+        </DownIconWrapper>
       </PageWrapper>
 
       <PageWrapper>
