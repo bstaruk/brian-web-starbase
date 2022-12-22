@@ -9,6 +9,8 @@ declare module '@emotion/react' {
     colors: {
       background: string;
       foreground: string;
+      anchor: string;
+      anchorHover: string;
     };
   }
 }
@@ -21,6 +23,8 @@ const theme: Theme = {
   colors: {
     background: '#F2F0EC',
     foreground: '#3F3A4F',
+    anchor: '#7A557B',
+    anchorHover: '#7A557B',
   },
 };
 

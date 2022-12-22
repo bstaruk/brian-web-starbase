@@ -1,9 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Link from 'components/Link';
 import Text from 'components/Text';
-import { Wrapper, PageWrapper, SectionWrapper } from './wrappers';
+import SocialLinks from 'components/SocialLinks';
+import { ReactComponent as DownIcon } from './assets/down.svg';
+import { Wrapper, PageWrapper, SectionWrapper, DownIconWrapper } from './wrappers';
 
 const HomePage = () => (
   <>
@@ -20,25 +21,22 @@ const HomePage = () => (
 
           <Text as="p">
             <>
-              I{"'"}m a web developer from Boston with a passion for creating elegant, functional
-              user experiences with modern front-end technologies including React, Webpack, ES6,
-              PostCSS & semantic HTML. To learn more about me,{' '}
-              <Link href="https://resume.brian.staruk.net" target="_blank">
-                check out my resume
-              </Link>{' '}
-              or{' '}
-              <Link href="https://www.linkedin.com/in/brian-staruk" target="_blank">
-                add me on LinkedIn
-              </Link>
-              .
+              I{"'"}m a husband, animal lover, homebrewer and gamer from Boston, MA. More
+              relevantly, I{"'"}m a front-end web developer with a passion for user and dev
+              experience. Crafting polished, accessible interfaces with React and implementing
+              airtight CI/CD flows are my specialties.
             </>
           </Text>
         </SectionWrapper>
+
+        <DownIconWrapper aria-hidden="true">
+          <DownIcon />
+        </DownIconWrapper>
       </PageWrapper>
 
       <PageWrapper>
         <SectionWrapper>
-          <Text as="p">This is page two.</Text>
+          <SocialLinks />
         </SectionWrapper>
       </PageWrapper>
     </Wrapper>

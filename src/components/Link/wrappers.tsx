@@ -1,10 +1,12 @@
 import styled from '@emotion/styled';
 
 export const Wrapper = styled.a`
-  color: ${p => p.theme.colors.foreground};
-  text-decoration: underline;
+  font-weight: 700;
+  color: ${p => p.theme.colors.anchor};
+  text-decoration: none;
 
   &:hover {
-    text-decoration: none;
+    color: ${p => p.theme.colors.anchorHover};
+    text-decoration: underline;
   }
 `;
