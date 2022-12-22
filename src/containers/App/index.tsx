@@ -8,11 +8,11 @@ import NotFoundPage from 'containers/NotFoundPage';
 const App = () => (
   <>
     <Helmet
-      titleTemplate="%s | starbase-react"
-      defaultTitle="starbase-react"
+      titleTemplate="%s | brian.staruk.net"
+      defaultTitle="brian.staruk.net"
       htmlAttributes={{ lang: 'en-US' }}
     >
-      <meta name="description" content="My React application, bootstrapped with starbase-react." />
+      <meta name="description" content="Brian Staruk is a web developer from Boston, MA." />
     </Helmet>
 
     <Routes>
