@@ -17,6 +17,17 @@ export const Wrapper = styled.div<TextProps>`
     }
   `}
 
+  /* body small */
+    ${p =>
+    p.variant === 'body-sm' &&
+    `
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-family: ${p.theme.fonts.sans};
+    font-weight: 400;
+  `}
+
   /* h1 */
   ${p =>
     p.variant === 'h1' &&
