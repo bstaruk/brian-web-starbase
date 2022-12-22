@@ -17,6 +17,11 @@ export const PageWrapper = styled.div`
   width: 100%;
   height: 100vh;
   scroll-snap-align: start;
+  overflow: hidden;
+
+  &:nth-of-type(even) {
+    background: #fff;
+  }
 `;
 
 export const SectionWrapper = styled.section`
