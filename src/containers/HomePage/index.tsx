@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 
 import Link from 'components/Link';
 import Text from 'components/Text';
+import SocialLinks from 'components/SocialLinks';
 import { Wrapper, PageWrapper, SectionWrapper } from './wrappers';
 
 const HomePage = () => (
@@ -38,7 +39,7 @@ const HomePage = () => (
 
       <PageWrapper>
         <SectionWrapper>
-          <Text as="p">This is page two.</Text>
+          <SocialLinks />
         </SectionWrapper>
       </PageWrapper>
     </Wrapper>
