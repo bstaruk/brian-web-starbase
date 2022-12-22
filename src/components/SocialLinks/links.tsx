@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ReactComponent as EmailIcon } from './assets/envelope.svg';
+import { ReactComponent as ResumeIcon } from './assets/file.svg';
 import { ReactComponent as GitHubIcon } from './assets/github.svg';
 import { ReactComponent as LinkedInIcon } from './assets/linkedin.svg';
 
@@ -25,6 +26,11 @@ const links: LinkItem[] = [
     href: 'https://www.linkedin.com/in/brian-staruk',
     icon: <LinkedInIcon />,
     title: 'Connect with me on LinkedIn',
+  },
+  {
+    href: 'https://resume.brian.staruk.net',
+    icon: <ResumeIcon />,
+    title: 'Check out my resume',
   },
 ];
 

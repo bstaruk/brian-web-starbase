@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Link from 'components/Link';
 import Text from 'components/Text';
 import SocialLinks from 'components/SocialLinks';
 import { Wrapper, PageWrapper, SectionWrapper } from './wrappers';
@@ -20,19 +19,11 @@ const HomePage = () => (
           </Text>
 
           <Text as="p">
-            <>
-              I{"'"}m a web developer from Boston with a passion for creating elegant, functional
-              user experiences with modern front-end technologies including React, Webpack, ES6,
-              PostCSS & semantic HTML. To learn more about me,{' '}
-              <Link href="https://resume.brian.staruk.net" target="_blank">
-                check out my resume
-              </Link>{' '}
-              or{' '}
-              <Link href="https://www.linkedin.com/in/brian-staruk" target="_blank">
-                add me on LinkedIn
-              </Link>
-              .
-            </>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat mauris sed quam
+            euismod luctus nec et ante. Nulla finibus lobortis tellus, eget laoreet turpis molestie
+            sed. Nulla enim est, dignissim a ligula eget, faucibus convallis turpis. Nullam pulvinar
+            blandit leo nec porttitor. Ut tristique lobortis iaculis. Morbi scelerisque risus nec
+            aliquam tempus. Sed placerat leo libero, id ultricies nunc laoreet ac.
           </Text>
         </SectionWrapper>
       </PageWrapper>
