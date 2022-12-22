@@ -1,17 +1,28 @@
 import styled from '@emotion/styled';
 
 export const Wrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+`;
+
+export const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 24px;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
 `;
 
-export const HeaderWrapper = styled.header`
+export const SectionWrapper = styled.section`
   max-width: 70ch;
   margin: 0 auto 24px;
+  padding: 24px;
   text-align: center;
 
   > *:not(:last-child) {
