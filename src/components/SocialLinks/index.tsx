@@ -1,37 +1,21 @@
 import React from 'react';
 
-import { ReactComponent as EmailIcon } from './assets/envelope.svg';
-import { ReactComponent as GitHubIcon } from './assets/github.svg';
-import { ReactComponent as LinkedInIcon } from './assets/linkedin.svg';
+import links from './links';
 import { ListWrapper, ListItemWrapper, LinkWrapper } from './wrappers';
-
-const links = [
-  {
-    href: 'mailto:brian@staruk.net',
-    icon: <EmailIcon />,
-    title: 'Email me',
-  },
-  {
-    href: 'https://github.com/bstaruk',
-    icon: <GitHubIcon />,
-    title: 'Follow me on GitHub',
-  },
-  {
-    href: 'https://www.linkedin.com/in/brian-staruk',
-    icon: <LinkedInIcon />,
-    title: 'Connect with me on LinkedIn',
-  },
-];
 
 const SocialLinks = () => (
   <ListWrapper>
-    {links.map((link, index) => (
-      <ListItemWrapper key={index}>
-        <LinkWrapper href={link.href} target="_blank" title={link.title}>
-          {link.icon}
-        </LinkWrapper>
-      </ListItemWrapper>
-    ))}
+    {links.map((link, index) => {
+      const { href, icon, title } = link;
+
+      return (
+        <ListItemWrapper key={index}>
+          <LinkWrapper target="_blank" {...{ href, title }}>
+            {icon}
+          </LinkWrapper>
+        </ListItemWrapper>
+      );
+    })}
   </ListWrapper>
 );
 
