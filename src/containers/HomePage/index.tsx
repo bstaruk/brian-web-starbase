@@ -21,10 +21,10 @@ const HomePage = () => (
 
           <Text as="p">
             <>
-              I{"'"}m a husband, animal lover, homebrewer and gamer from Boston, MA. More
+              I{"'"}m a husband, animal lover, gamer and homebrewer from Boston, MA. More
               relevantly, I{"'"}m a front-end web developer with a passion for user and dev
-              experience. Crafting polished, accessible interfaces with React and implementing
-              airtight CI/CD flows are my specialties.
+              experience. Crafting polished, accessible interfaces with React and implementing them
+              with airtight CI/CD flows is my specialty.
             </>
           </Text>
         </SectionWrapper>
