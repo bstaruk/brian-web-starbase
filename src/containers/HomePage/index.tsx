@@ -24,7 +24,7 @@ const HomePage = () => (
               I{"'"}m a husband, animal lover, gamer and homebrewer from Boston, MA. More
               relevantly, I{"'"}m a front-end web developer with a passion for user and dev
               experience. Crafting polished, accessible interfaces with React and implementing them
-              with airtight CI/CD flows is my specialty.
+              with an airtight CI/CD flow is my specialty.
             </>
           </Text>
         </SectionWrapper>
