@@ -36,6 +36,10 @@ const HomePage = () => (
 
       <PageWrapper>
         <SectionWrapper>
+          <Text as="h2" variant="h2">
+            <>let{"'"}s connect</>
+          </Text>
+
           <SocialLinks />
         </SectionWrapper>
       </PageWrapper>

@@ -46,4 +46,23 @@ export const Wrapper = styled.div<TextProps>`
       font-size: 64px;
     }
   `}
+
+  /* h2 */
+  ${p =>
+    p.variant === 'h2' &&
+    `
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-family: ${p.theme.fonts.serif};
+    font-weight: 700;
+
+    @media (min-width: 420px) {
+      font-size: 40px;
+    }
+
+    @media (min-width: 760px) {
+      font-size: 56px;
+    }
+  `}
 `;

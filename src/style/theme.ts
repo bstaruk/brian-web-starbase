@@ -23,7 +23,7 @@ const theme: Theme = {
   colors: {
     background: '#F2F0EC',
     foreground: '#3F3A4F',
-    anchor: '#725D84',
+    anchor: '#3F3A4F',
     anchorHover: '#725D84',
   },
 };
