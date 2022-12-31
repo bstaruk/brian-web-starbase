@@ -12,6 +12,11 @@ const globalStyles = (theme: Theme) => css`
     background-color: ${theme.colors.background};
     color: ${theme.colors.foreground};
   }
+
+  ::selection {
+    background-color: ${theme.colors.foreground};
+    color: ${theme.colors.background};
+  }
 `;
 
 export default globalStyles;

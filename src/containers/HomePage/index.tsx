@@ -3,22 +3,24 @@ import React from 'react';
 import Text from 'components/Text';
 import SocialLinks from 'components/SocialLinks';
 import { ReactComponent as DownIcon } from './assets/down.svg';
-import { Wrapper, PageWrapper, SectionWrapper, DownIconWrapper } from './wrappers';
+import { Wrapper, PageWrapper, SectionWrapper, TitleWrapper, DownIconWrapper } from './wrappers';
 
 const HomePage = () => (
   <Wrapper>
     <PageWrapper>
       <SectionWrapper>
-        <Text as="h1" variant="h1">
-          brian.staruk.net
-        </Text>
+        <TitleWrapper as="h1" variant="h1">
+          <>
+            brian<span>.</span>staruk<span>.net</span>
+          </>
+        </TitleWrapper>
 
         <Text as="p">
           <>
-            I{"'"}m a husband, animal lover, gamer and homebrewer from Boston, MA. More relevantly,
-            I{"'"}m a front-end web developer with a passion for user and dev experience. Crafting
-            polished, accessible interfaces with React and implementing them with an airtight CI/CD
-            flow is my specialty.
+            I{"'"}m a husband, animal lover, gamer and homebrewer from Boston, MA. I{"'"}m also a
+            front-end web developer with a passion for user and dev experience. Crafting polished,
+            accessible interfaces with React and implementing them with an airtight CI/CD flow is my
+            specialty.
           </>
         </Text>
       </SectionWrapper>

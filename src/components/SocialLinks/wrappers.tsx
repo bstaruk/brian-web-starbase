@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
-export const ListWrapper = styled.ul`
+export const ListWrapper = styled(motion.ul)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +9,7 @@ export const ListWrapper = styled.ul`
   list-style: none;
 `;
 
-export const ListItemWrapper = styled.li`
+export const ListItemWrapper = styled(motion.li)`
   display: flex;
   align-items: center;
   justify-content: center;
