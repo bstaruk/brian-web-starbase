@@ -8,8 +8,8 @@ export interface TextProps {
   variant?: 'h1' | 'h2' | 'body' | 'body-sm';
 }
 
-const Text = ({ as, children, variant = 'body' }: TextProps) => (
-  <Wrapper {...{ as, variant }}>{children}</Wrapper>
+const Text = ({ as, children, variant = 'body', ...props }: TextProps) => (
+  <Wrapper {...{ as, variant, ...props }}>{children}</Wrapper>
 );
 
 export default Text;
