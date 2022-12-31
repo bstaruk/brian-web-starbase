@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Text from 'components/Text';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -32,6 +33,12 @@ export const SectionWrapper = styled.section`
 
   > *:not(:last-child) {
     margin-bottom: 8px;
+  }
+`;
+
+export const TitleWrapper = styled(Text)`
+  > span {
+    opacity: 0.25;
   }
 `;
 

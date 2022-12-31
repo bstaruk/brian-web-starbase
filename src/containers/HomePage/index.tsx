@@ -3,15 +3,17 @@ import React from 'react';
 import Text from 'components/Text';
 import SocialLinks from 'components/SocialLinks';
 import { ReactComponent as DownIcon } from './assets/down.svg';
-import { Wrapper, PageWrapper, SectionWrapper, DownIconWrapper } from './wrappers';
+import { Wrapper, PageWrapper, SectionWrapper, TitleWrapper, DownIconWrapper } from './wrappers';
 
 const HomePage = () => (
   <Wrapper>
     <PageWrapper>
       <SectionWrapper>
-        <Text as="h1" variant="h1">
-          brian.staruk.net
-        </Text>
+        <TitleWrapper as="h1" variant="h1">
+          <>
+            brian<span>.</span>staruk<span>.net</span>
+          </>
+        </TitleWrapper>
 
         <Text as="p">
           <>
