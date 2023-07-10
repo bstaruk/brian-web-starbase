@@ -5,20 +5,20 @@ import links from './links';
 import { ListWrapper, ListItemWrapper, LinkWrapper, LinkLabelWrapper } from './wrappers';
 
 const SocialLinks = () => (
-  <ListWrapper initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
+  <ListWrapper initial="offscreen" whileInView="onscreen" viewport={{ once: false, amount: 0.8 }}>
     {links.map(({ href, icon, label, title }, index) => (
       <ListItemWrapper
         key={index}
         variants={{
           offscreen: {
-            x: -50 - index * 50,
+            y: 75 + index * 75,
           },
           onscreen: {
-            x: 0,
+            y: 0,
             transition: {
               type: 'spring',
-              bounce: 0.4,
-              duration: 0.8,
+              bounce: 0.3,
+              duration: 1,
             },
           },
         }}
