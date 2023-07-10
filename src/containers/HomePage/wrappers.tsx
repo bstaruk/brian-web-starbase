@@ -42,7 +42,7 @@ export const TitleWrapper = styled(Text)`
   }
 `;
 
-export const DownIconWrapper = styled.div`
+export const DownIconWrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +53,9 @@ export const DownIconWrapper = styled.div`
   width: 36px;
   height: 36px;
   opacity: 0.25;
+  background: none;
+  border: 0;
+  cursor: pointer;
 
   svg {
     display: block;
